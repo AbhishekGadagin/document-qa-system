@@ -1,0 +1,60 @@
+document-qa-system/
+├── .env.example                    # Example environment file
+├── .gitignore                      # Git ignore rules
+├── README.md                       # Project documentation
+├── package.json                    # Node.js dependencies
+├── tsconfig.json                   # TypeScript configuration
+├── docker-compose.yml              # Docker setup for Qdrant
+├── LICENSE                         # MIT License
+├── CONTRIBUTING.md                 # Contribution guidelines
+├── .github/
+│   └── workflows/
+│       └── ci.yml                  # GitHub Actions CI/CD
+├── src/
+│   ├── config/
+│   │   ├── database.ts             # Qdrant database configuration
+│   │   ├── ai.ts                   # AI model configuration
+│   │   └── google-drive.ts         # Google Drive API setup
+│   ├── services/
+│   │   ├── document-service.ts     # Document handling service
+│   │   ├── embedding-service.ts    # Text embedding service
+│   │   ├── vector-service.ts       # Vector database operations
+│   │   └── ai-service.ts           # AI question answering
+│   ├── mcp/
+│   │   ├── server.ts              # MCP server implementation
+│   │   └── tools/
+│   │       ├── document-tools.ts   # Document management tools
+│   │       └── search-tools.ts     # Search functionality tools
+│   ├── api/
+│   │   ├── app.ts                 # Express server setup
+│   │   └── routes/
+│   │       ├── chat.ts            # Chat and document routes
+│   │       └── health.ts          # Health check endpoint
+│   ├── utils/
+│   │   ├── text-splitter.ts       # Text chunking utility
+│   │   ├── logger.ts              # Logging utility
+│   │   └── validation.ts          # Input validation
+│   └── types/
+│       └── index.ts               # TypeScript type definitions
+├── public/
+│   ├── index.html                 # Main web interface
+│   ├── style.css                  # Styling
+│   ├── script.js                  # Frontend JavaScript
+│   └── favicon.ico                # Website icon
+├── docs/
+│   ├── API.md                     # API documentation
+│   ├── DEPLOYMENT.md              # Deployment guide
+│   └── ARCHITECTURE.md            # System architecture
+├── scripts/
+│   ├── setup.js                   # Initial setup script
+│   ├── seed-data.js               # Sample data seeder
+│   └── health-check.js            # System health checker
+└── tests/
+    ├── unit/
+    │   ├── services/
+    │   │   ├── ai-service.test.js
+    │   │   └── vector-service.test.js
+    │   └── utils/
+    │       └── text-splitter.test.js
+    └── integration/
+        └── api.test.js

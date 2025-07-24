@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document Q&A System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>📚 Document Q&A System</h1>
+            <p>Upload documents and ask questions about them</p>
+        </header>
+
+        <div class="main-content">
+            <div class="upload-section">
+                <h2>Add Document</h2>
+                <form id="uploadForm">
+                    <input type="text" id="documentName" placeholder="Document name" required>
+                    <textarea id="documentContent" placeholder="Document content" rows="6" required></textarea>
+                    <button type="submit">Add Document</button>
+                </form>
+                <div id="uploadStatus"></div>
+            </div>
+
+            <div class="chat-section">
+                <h2>Ask Questions</h2>
+                <div id="chatMessages"></div>
+                <form id="chatForm">
+                    <input type="text" id="questionInput" placeholder="Ask a question about your documents..." required>
+                    <button type="submit">Ask</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
